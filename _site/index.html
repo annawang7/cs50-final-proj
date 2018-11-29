@@ -14,13 +14,14 @@
       <link rel="canonical" href="http://localhost:4000/cs50-final-proj/" />
       <meta property="og:url" content="http://localhost:4000/cs50-final-proj/" />
       <meta property="og:site_name" content="Your awesome title" />
+      <script src=“https://code.jquery.com/jquery-3.3.1.min.js“></script>
       <script type="application/ld+json">
          {"@type":"WebSite","url":"http://localhost:4000/cs50-final-proj/","name":"Your awesome title","headline":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"http://schema.org"}
       </script>
       <!-- End Jekyll SEO tag -->
       <link rel="stylesheet" href="/cs50-final-proj/assets/main.css">
-      <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/cs50-final-proj/feed.xml" title="Your awesome title" />
-   </head>
+      <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/cs50-final-proj/feed.xml" title="Your awesome title" />  
+    </head>
    <body>
       <header class="site-header" role="banner">
          <div class="wrapper">
@@ -90,22 +91,22 @@
    </body>
 </html>
 <script>
-		var $form = $('form#test-form')
-		var url = 'https://script.google.com/macros/s/AKfycbyRrHKpPuL_-3z2c8Tc0tsx0cYymqCmTAS6i-5x7Upli0JMa3w/exec'
+  var $form = $('form#test-form')
+  var url = 'https://script.google.com/macros/s/AKfycbyRrHKpPuL_-3z2c8Tc0tsx0cYymqCmTAS6i-5x7Upli0JMa3w/exec'
 
 
-		$('#submit-form').on('click', function(e) {
-			e.preventDefault();
-			var jqxhr = $.ajax({
-				url: url,
-				method: "GET",
-				dataType: "json",
-				data: $form.serialize()
-			}).done(function() {
-				alert("success");
-			})
-			.fail(function() {
-				alert("failure");
-			});
-		})
-	</script>
+  $('#submit-form').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serialize()
+    }).done(function() {
+      alert("success");
+    })
+    .fail(function() {
+      alert("failure");
+    });
+  })
+</script>
