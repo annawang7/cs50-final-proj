@@ -10,7 +10,7 @@ tiled_bg:           false   # Set this true if you want to tile your background 
 locale:             en_US
 # url:                https://taylantatli.github.io/Moon
 url:                http://127.0.0.1:4000
-url:                http://annawang7.github.io
+url:                http://annawang7.github.io/cs50-final-proj
 # baseurl:             # the subpath of your site, e.g. /blog
 # url:                http://localhost:4000 # the base hostname & protocol for your site, e.g. http://example.com
 
