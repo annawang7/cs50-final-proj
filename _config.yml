@@ -23,6 +23,7 @@ baseurl: "/cs50-final-proj" # the subpath of your site, e.g. /blog
 url: "http://annawang7.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+repository: annawang7/cs50-final-proj
 
 # Build settings
 markdown: kramdown
