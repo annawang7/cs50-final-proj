@@ -21,7 +21,6 @@ layout: compress
                     <h3 class="title">
                         <a class="zoombtn" href="{{ site.url }}">
                             <p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
-                            <p> blah blah blah blah</p>
 			            </a>
                     </h3>
                     <hr class="hr-line">
@@ -30,7 +29,19 @@ layout: compress
                         	<p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
 			            </a>
                     </h3>
-                    {% include social-links.html %}
+                    <form id="test-form">
+                        <div>
+                            <label>Name</label>
+                            <input type="text" name="id" placeholder="Name">
+                        </div>
+                        <div>
+                            <label>Mood</label>
+                            <input type="range" name="mood_value" min="0" max="255" value="128">
+                        </div>
+                        <div>
+                            <button type="submit" id="submit-form">Submit</button>
+                        </div>
+                    </form>
                   <hr class="hr-line">
                   <h3 class="title">
                          <a class="btn zoombtn" href="{{ site.url }}/about">
@@ -49,3 +60,21 @@ layout: compress
     {% include scripts.html %}
 </body>
 </html>
+<script>
+    var $form = $('form#test-form');
+    var url = 'https://script.google.com/macros/s/AKfycbyRrHKpPuL_-3z2c8Tc0tsx0cYymqCmTAS6i-5x7Upli0JMa3w/exec';
+    $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serialize()
+        }).done(function() {
+            alert("success");
+        })
+        .fail(function() {
+            alert("failure");
+        });
+    })
+</script>
