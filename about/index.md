@@ -1,14 +1,14 @@
 ---
 layout: page
-title: About the Theme
+title: About The Project
 tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center><b>That's A Mood</b> is a high-tech, interactive art exhibition made for Harvard's CS50.</center>
 
-## Features
+## About Us
 * Minimal, you can focus on your content
 * Responsive
 * Disqus integration
