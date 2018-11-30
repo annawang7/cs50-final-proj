@@ -19,10 +19,6 @@ body {
 	background-color: $bodycolor;
 	background-position: center center;
 	background-attachment: fixed;
-	@media #{$small} {
-	    background-image: none !important;
-		background: $white;
-	}
 }
 * {
 	box-sizing: border-box;
@@ -40,9 +36,6 @@ body {
 	min-height: 300px;
 	text-align: left;
 	color: $white;
-	@media #{$small} {
-		display: block !important;
-	}
 	@media only screen and (max-height: 500px) {
 	    display: block !important;
 	}
@@ -70,7 +63,7 @@ body {
 	align-items: center;
 }
 .container {
-	width: 36rem;
+	width: 80%;
 	max-width: 550px;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -81,10 +74,6 @@ body {
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	@include transition(.5s);
-	@media #{$small} {
-		width: 100%;
-	    box-shadow: none;
-	}
 	@media #{$medium} {
 		width: 80%;
 	}
@@ -95,9 +84,6 @@ body {
 	.title {
 	    margin-top: 0;
 	    margin-bottom: 5px;
-	}
-	@media #{$small} {
-		padding: 0 1em;
 	}
 }
 .wrapper {
@@ -110,11 +96,6 @@ body {
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	@include transition(.5s);
-	@media #{$small} {
-		width: 90%;
-		padding: 2em 0;
-	    box-shadow: none;
-	}
 }
 #disqus_thread {
 	width: 75%;
@@ -126,11 +107,6 @@ body {
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	@include transition(.5s);
-	@media #{$small} {
-		width: 90%;
-		padding: 2em 0;
-	    box-shadow: none;
-	}
 }
 // entry meta
 .entry-meta {
@@ -194,9 +170,6 @@ header .entry-meta {
 }
 .feature {
     @include transition(.5s);
-    @media #{$small} {
-        background-image: none !important;
-    }
     @media #{$medium} {
         color: white;
         padding: 4em;
