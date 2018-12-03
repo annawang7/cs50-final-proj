@@ -35,6 +35,9 @@ layout: compress
                             <br>
                             <input type="range" name="mood_value" min="0" max="255" value="128">
                         </div>
+                        <div id="color-picker-container">
+
+                        </div>
                         <div>
                             <button type="submit" id="submit-form">Submit</button>
                         </div>
@@ -47,6 +50,7 @@ layout: compress
 </body>
 </html>
 <script>
+    var demoColorPicker = new iro.ColorPicker("#color-picker-container");
     var $form = $('form#test-form');
     var url = 'https://script.google.com/macros/s/AKfycbyRrHKpPuL_-3z2c8Tc0tsx0cYymqCmTAS6i-5x7Upli0JMa3w/exec';
     $('#submit-form').on('click', function(e) {
