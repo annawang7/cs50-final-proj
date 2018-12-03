@@ -63,7 +63,7 @@ body {
 	align-items: center;
 }
 .container {
-	width: 80%;
+	width: 100%;
 	max-width: 550px;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -75,7 +75,7 @@ body {
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	@include transition(.5s);
 	@media #{$medium} {
-		width: 80%;
+		width: 100%;
 	}
 }
 .row {
@@ -186,4 +186,10 @@ header .entry-meta {
 	display: none;
 	visibility: hidden;
 	pointer-events: none;
+}
+.wrapper svg {
+	margin: 0 auto;
+}
+#color-picker-container > svg {
+    margin: 0 auto;
 }

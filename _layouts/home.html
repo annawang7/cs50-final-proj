@@ -17,7 +17,7 @@ layout: compress
             <div class="row">
                 <h3 class="title">
                     <a class="zoombtn" href="{{ site.url }}">
-                        <p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
+                        <p style="font-size:2rem;font-weight:300">{{ site.title }}</p>
                     </a>
                 </h3>
                 <h3 class="title">
@@ -26,11 +26,8 @@ layout: compress
                     </a>
                 </h3>
                 <hr class="hr-line">
-                <form id="test-form">
-                    <div class="mood">
-                        <label style="font-size:2rem;font-weight:300">How are you feeling today?</label>
-                        <br>
-                    </div>
+                <form id="mood-form">
+                    <h3 style="font-size:1rem;font-weight:300">How are you feeling today?</h3>
                     <div id="color-picker-container"></div>
                     <div>
                         <button type="submit" id="submit-form">Submit</button>
@@ -44,8 +41,11 @@ layout: compress
 </body>
 </html>
 <script>
-    var demoColorPicker = new iro.ColorPicker("#color-picker-container");
-    var $form = $('form#test-form');
+    var $form = $('form#mood-form');
+    var test = $form.width();
+    console.log(test);
+    var demoColorPicker = new iro.ColorPicker("#color-picker-container", {width:test, height:test});
+    
     var url = 'https://script.google.com/macros/s/AKfycbyRrHKpPuL_-3z2c8Tc0tsx0cYymqCmTAS6i-5x7Upli0JMa3w/exec';
     $('#submit-form').on('click', function(e) {
         e.preventDefault();
@@ -56,5 +56,6 @@ layout: compress
             data: demoColorPicker.color.rgb
         });
         console.log(demoColorPicker.color.rgb);
+        $form.replaceWith('<div>Thanks for sharing and contributing to an open community here at Harvard.</div> <a class="zoombtn" href="{{ site.url }}">Return to Home</a>');
     })
 </script>
