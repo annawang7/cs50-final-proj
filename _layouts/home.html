@@ -50,13 +50,7 @@ layout: compress
 </body>
 </html>
 <script>
-    var colorPicker = new iro.ColorPicker("#color-picker-container", {
-        // Set the size of the color picker UI
-        width: 320,
-        height: 320,
-        // Set the initial color to red
-        color: "#f00"
-    });
+    var demoColorPicker = new iro.ColorPicker("#color-picker-container");
     var $form = $('form#test-form');
     var url = 'https://script.google.com/macros/s/AKfycbyRrHKpPuL_-3z2c8Tc0tsx0cYymqCmTAS6i-5x7Upli0JMa3w/exec';
     $('#submit-form').on('click', function(e) {
