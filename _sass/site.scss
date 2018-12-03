@@ -30,12 +30,12 @@ body {
 	box-sizing: border-box;
 }
 .header {
-	height: 100%;
 	position: relative;
 	width: 100%;
 	min-height: 300px;
 	text-align: left;
 	color: $white;
+	padding: 50px;
 	@media only screen and (max-height: 500px) {
 	    display: block !important;
 	}
