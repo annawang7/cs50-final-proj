@@ -29,7 +29,7 @@ layout: compress
                 <form id="mood-form">
                     <h3 style="font-size:1rem;font-weight:300">
                         How are you feeling today?
-                        <span id="mood"></span>
+                        <span id="mood" style="font-weight:300"></span>
                     </h3>
                     <div id="color-picker-container"></div>
                     <div>
@@ -99,7 +99,7 @@ layout: compress
             data: demoColorPicker.color.rgb
         });
         console.log(demoColorPicker.color.rgb);
-        $form.replaceWith('<h3>Thanks for sharing and contributing to an open community here at Harvard.</h3> <a class="zoombtn" href="{{ site.url }}">Return to Home</a>');
+        $form.replaceWith('<p style="font-size:1rem;font-weight:300">Thanks for sharing and contributing to an open community here at Harvard.</p> <a href="{{ site.url }}" style="color:white;font-size:1rem;font-weight:300">Return to Home</a>');
     })
 
 </script>
