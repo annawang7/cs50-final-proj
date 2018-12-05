@@ -27,7 +27,10 @@ layout: compress
                 </h3>
                 <hr class="hr-line">
                 <form id="mood-form">
-                    <h3 style="font-size:1rem;font-weight:300">How are you feeling today? <span id="mood"></span></h3>
+                    <h3 class="title" style="font-size:1rem;font-weight:300">
+                        How are you feeling today?
+                        <span id="mood"></span>
+                    </h3>
                     <div id="color-picker-container"></div>
                     <div>
                         <button type="submit" id="submit-form">Submit</button>
@@ -63,7 +66,7 @@ layout: compress
             if (Math.abs(blue-green) < 125 - Math.min(blue,green)/2) {
                 text = "Mad";
             } else if (blue > green) {
-                text = "Anxious";
+                text = "Stressed";
             } else {
                 text = "Joyful";
             }
@@ -79,7 +82,7 @@ layout: compress
             if (Math.abs(green-red) < 125 - Math.min(red,green)/2) {
                 text = "Sad";
             } else if (red > green) {
-                text = "Anxious";
+                text = "Stressed";
             } else {
                 text = "Powerful";
             }
