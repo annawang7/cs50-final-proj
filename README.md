@@ -17,7 +17,7 @@
   Once they hit submit, the color selected on the wheel is sent through a series of pipelines to eventually interact with the LEDs, and add the new input to our hardware project.
 
 ## Developer Details
-  To access this project's web codebase, go to the **[Github Repository](https://github.com/annawang7/cs50-final-proj)** 
+  To access this project's web codebase, visit its **[Github Repository](https://github.com/annawang7/cs50-final-proj)**.
 
 ## Study Citations
   * **[Mental Health America](https://www.mha-em.org/advocacy/12-media/132-mental-health-treatment-and-stigma-statistics.html)** 

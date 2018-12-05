@@ -27,7 +27,7 @@ layout: compress
                 </h3>
                 <hr class="hr-line">
                 <form id="mood-form">
-                    <h3 class="title" style="font-size:1rem;font-weight:300">
+                    <h3 style="font-size:1rem;font-weight:300">
                         How are you feeling today?
                         <span id="mood"></span>
                     </h3>
@@ -55,8 +55,6 @@ layout: compress
     demoColorPicker.on("color:change", function(color, changes) {
         /* Sets the span's text color to the current rgb color */
         $moodSpan.style.color = color.rgbString;
-        console.log(color.rgbString);
-        console.log(color.rgb.r);
         var red = color.rgb.r;
         var green = color.rgb.g;
         var blue = color.rgb.b;
