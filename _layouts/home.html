@@ -27,7 +27,7 @@ layout: compress
                 </h3>
                 <hr class="hr-line">
                 <form id="mood-form">
-                    <h3 style="font-size:1rem;font-weight:300">How are you feeling today?</h3>
+                    <h3 style="font-size:1rem;font-weight:300">How are you feeling today? <span id="mood"></span></h3>
                     <div id="color-picker-container"></div>
                     <div>
                         <button type="submit" id="submit-form">Submit</button>
@@ -42,10 +42,52 @@ layout: compress
 </html>
 <script>
     var $form = $('form#mood-form');
-    var test = $form.width() * 0.9;
-    console.log(test);
-    var demoColorPicker = new iro.ColorPicker("#color-picker-container", {width:test, height:test});
-    
+
+    /* Create the color picker */
+    var size = 70 + $form.width() * 0.7;
+    var demoColorPicker = new iro.ColorPicker("#color-picker-container", {width:size, height:size, color:"#f00"});
+
+    /* Updates the moodSpan text with the correct mood and assocated color */
+    var $moodSpan = document.getElementById("mood");
+    demoColorPicker.on("color:change", function(color, changes) {
+        /* Sets the span's text color to the current rgb color */
+        $moodSpan.style.color = color.rgbString;
+        console.log(color.rgbString);
+        console.log(color.rgb.r);
+        var red = color.rgb.r;
+        var green = color.rgb.g;
+        var blue = color.rgb.b;
+        var text = "Input A Mood";
+
+        if (red == 255) {
+            if (Math.abs(blue-green) < 125 - Math.min(blue,green)/2) {
+                text = "Mad";
+            } else if (blue > green) {
+                text = "Anxious";
+            } else {
+                text = "Joyful";
+            }
+        } else if (green == 255) {
+            if (Math.abs(blue-red) < 125 - Math.min(blue,red)/2) {
+                text = "Calm";
+            } else if (red > blue) {
+                text = "Joyful";
+            } else {
+                text = "Powerful";
+            }
+        } else if (blue == 255) {
+            if (Math.abs(green-red) < 125 - Math.min(red,green)/2) {
+                text = "Sad";
+            } else if (red > green) {
+                text = "Anxious";
+            } else {
+                text = "Powerful";
+            }
+        }
+        $moodSpan.textContent = text;
+    });
+
+    /* Makes a get request with the rgb value to the Google Apps Script whenever the form is submitted */
     var url = 'https://script.google.com/macros/s/AKfycbyRrHKpPuL_-3z2c8Tc0tsx0cYymqCmTAS6i-5x7Upli0JMa3w/exec';
     $('#submit-form').on('click', function(e) {
         e.preventDefault();
@@ -56,6 +98,7 @@ layout: compress
             data: demoColorPicker.color.rgb
         });
         console.log(demoColorPicker.color.rgb);
-        $form.replaceWith('<div>Thanks for sharing and contributing to an open community here at Harvard.</div> <a class="zoombtn" href="{{ site.url }}">Return to Home</a>');
+        $form.replaceWith('<h3>Thanks for sharing and contributing to an open community here at Harvard.</h3> <a class="zoombtn" href="{{ site.url }}">Return to Home</a>');
     })
+
 </script>
