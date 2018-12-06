@@ -35,7 +35,7 @@ body {
 	min-height: 300px;
 	text-align: left;
 	color: $white;
-	padding: 50px;
+	padding: 20px;
 	@media only screen and (max-height: 500px) {
 	    display: block !important;
 	}
@@ -68,7 +68,7 @@ body {
 	padding-right: 15px;
 	padding-left: 15px;
 	@include center-block();
-	background-color: #1e002cde;
+	background-color: #150030b3;
 	color: white;
 	z-index: 1;
 	border-radius: 3px;
