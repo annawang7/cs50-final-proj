@@ -6,7 +6,8 @@
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
-int delayval = 50; // Delay for half a second
+// Delay for half a second
+int delayval = 50; 
 int input; 
 
 // Stores pixel color values
@@ -133,7 +134,9 @@ void slowTransition(int final_r, int final_g, int final_b)
   {
     for (int i = 0; i < NUMPIXELS; i++)
     {
-      changePixel(i, r[i] + ((final_r-r[i])*t / NUMCHANGES), g[i] + ((final_g-g[i])* t / NUMCHANGES), b[i] + ((final_b-b[i])* t / NUMCHANGES));
+      changePixel(i, r[i] + ((final_r-r[i])*t / NUMCHANGES), 
+      g[i] + ((final_g-g[i])* t / NUMCHANGES), 
+      b[i] + ((final_b-b[i])* t / NUMCHANGES));
     }
     delay(TIMEINT - 10);
   }
