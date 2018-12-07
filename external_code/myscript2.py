@@ -11,7 +11,7 @@ import time
 import random
 
 # Sets active pixel counter to 0
-counter = 0;
+counter = 0
 
 # Opens serial port
 ser = serial.Serial('/dev/ttyACM0', 9600)
