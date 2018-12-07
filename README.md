@@ -17,7 +17,7 @@
   Once they hit submit, the color selected on the wheel is sent through a series of pipelines to eventually interact with the LEDs, and add the new input to our hardware project.
 
 ## Background
-![Color wheel that we based our mood-color model off](https://github.com/annawang7/cs50-final-proj/blob/gh-pages/Color_Wheel.jpg "Color wheel")
+![[Color Wheel](https://www.psychologytoday.com/us/blog/peaceful-parents-happy-kids/201801/easy-ways-teach-kids-about-emotions-in-daily-life?amp)](https://github.com/annawang7/cs50-final-proj/blob/gh-pages/Color_Wheel.jpg "Color wheel")
 
 Mood heavily impacts the way
   Mapping colors to moods [GET CALEB IN HERE MAN]
