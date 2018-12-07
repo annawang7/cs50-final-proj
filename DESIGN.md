@@ -12,6 +12,8 @@ The web component is currently a website hosted on Github: **[That's A Mood](htt
   ### Details
 We chose to create a Jekyll website as it provides a clean platform to host unique templates as well as a streamlined process for posting. In the future, we may use the website as a platform to tell stories involving mental health and moods on Harvard, and this can easily be accomplished through Jekyll's efficient blogging system.
 
+Using JavaScript and jQuery, we create a jqXHR variable that stores the HTML form data in a serialized JSON containing the RGB values in a key-value pairs. Upon a submit event, the form sends the data via JSON over to the web app URL where it is then processed by the Google Apps Script.
+
 ## Google Apps Script
   ### Usage
 The Google Apps Script is not meant to be interfaced by end users, but serves as a repository for our data that's persistent. We chose to use Google Sheets to host our data for several reasons: 1) it does not require us to run our own web server to host the data, 2) Google Sheets features a familiar GUI that boosts readability and ease of use, 3) aggregated mood data can later be analyzed for trends and embedded in the Jekyll site without much extra effort, and 4) Google Sheets can be queried through the URL, returning a JSON file that can be deserialized to access table data.
