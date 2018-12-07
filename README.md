@@ -46,7 +46,7 @@ Purple and pink are the colors of **stress**: it is a color that borders on alar
 While some of these color choices may seem arbitrary, these are simply suggestions and an imperfect mapping of an infinite range of human emotions to a finite range of colors. We hope that this can help tap into the continuous spectrum of moods and emotions that Harvard students experience on a day-to-day basis in a colorful, expressive manner.
 
 ## Developer Details
-  Please visit **[That's a Mood](https://github.com/annawang7/cs50-final-proj)** to get started!
+  Please visit **[That's A Mood](https://github.com/annawang7/cs50-final-proj)** to get started!
 
 ## Study Citations
   * **[Mental Health America](https://www.mha-em.org/advocacy/12-media/132-mental-health-treatment-and-stigma-statistics.html)** 
