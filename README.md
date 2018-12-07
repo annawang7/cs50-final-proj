@@ -12,11 +12,12 @@
 ## Inputting a Mood
   **[That's A Mood](https://annawang7.github.io/cs50-final-proj)** is a static Jekyll website that currently hosts the input method for the That's A Mood project.
   
-  Users can input their mood by selecting a color on a given color wheel, which corresponds to an emotion. Based on mood-to-color relational studies, an algorithm maps a chosen color to a specific mood as a way to visually represent one's mental state.
+  Selecting your color on a given color wheel, which corresponds to an emotion. Based on mood-to-color relational studies, an algorithm maps a chosen color to a specific mood as a way to visually represent one's mental state.
   
   Once they hit submit, the color selected on the wheel is sent through a series of pipelines to eventually interact with the LEDs, and add the new input to our hardware project.
 
 ## Background
+Mood heavily impacts the way
   Mapping colors to moods [GET CALEB IN HERE MAN]
 
 ## Developer Details
