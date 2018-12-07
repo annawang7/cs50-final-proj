@@ -7,14 +7,14 @@
 
 ## The Web Component
   ### Usage
-    The web component is currently a website hosted on Github: **[That's A Mood](https://annawang7.github.io/cs50-final-proj)**. This website holds information about the project as well as the main input method: a color wheel, where users can input how they are feeling in the form of color at the current moment.
+The web component is currently a website hosted on Github: **[That's A Mood](https://annawang7.github.io/cs50-final-proj)**. This website holds information about the project as well as the main input method: a color wheel, where users can input how they are feeling in the form of color at the current moment.
 
   ### Details
-    We chose to create a Jekyll website as it provides a clean platform to host unique templates as well as a streamlined process for posting. In the future, we may use the website as a platform to tell stories involving mental health and moods on Harvard, and this can easily be accomplished through Jekyll's efficient blogging system.
+We chose to create a Jekyll website as it provides a clean platform to host unique templates as well as a streamlined process for posting. In the future, we may use the website as a platform to tell stories involving mental health and moods on Harvard, and this can easily be accomplished through Jekyll's efficient blogging system.
 
 ## Google Apps Script
   ### Usage
-    The Google Apps Script is not meant to be interfaced by end users, but serves as a repository for our data that's persistent. We chose to use Google Sheets to host our data for several reasons: 1) it does not require us to run our own web server to host the data, 2) Google Sheets features a familiar GUI that boosts readability and ease of use, 3) aggregated mood data can later be analyzed for trends and embedded in the Jekyll site without much extra effort, and 4) Google Sheets can be queried through the URL, returning a JSON file that can be deserialized to access table data.
+The Google Apps Script is not meant to be interfaced by end users, but serves as a repository for our data that's persistent. We chose to use Google Sheets to host our data for several reasons: 1) it does not require us to run our own web server to host the data, 2) Google Sheets features a familiar GUI that boosts readability and ease of use, 3) aggregated mood data can later be analyzed for trends and embedded in the Jekyll site without much extra effort, and 4) Google Sheets can be queried through the URL, returning a JSON file that can be deserialized to access table data.
   
   ### Details
     As Jekyll only supports a static website, using a web app containing JavaScript was the easiest way to obtain the best of both worlds with this framework. Once the user submits a color, their selection is sent via a GET request to the Google Apps Script, which was published as a Google Web App. The web app is constantly listening for GET requests and runs the web app upon a GET request. The Google Apps Script, which is running a variant of JavaScript, puts the data into a spreadsheet with a timestamp, red, green, and blue value column in the form of a datetime object and 3 integer values, respectively. This Google Sheet in effect acts as a database for our system and allows us to access data persistently and run analytics on the incoming mood data (an upcoming feature).
@@ -35,7 +35,7 @@
   ### Details
   	The Arduino is running Arduino C, a variant of C adapted for Arduino usage. We are using the Neopixel library by Adafruit to control the lights. Two methods are necessary to run the Arduino: the setup() method and the loop() method. setup() runs upon power on, and loop() runs continuously by default. The Arduino is listening for a serial input that the Raspberry Pi writes. The serial input is of the form "<pixel_number>^<red_value>,<green_value>#<blue_value>" for inputs that run upon a user submit to the form. However, if "r" is the serial input, then the LEDs display a shifting rainbow pattern. If "c" is passed in, all lights are cleared.
 
-  	We store the color value of each pixel in three arrays corresponding to R, G, and  B, each with length equal to the number of pixels. Every time the value 
+  	We store the color value of each pixel in three arrays corresponding to R, G, and  B, each with length equal to the number of pixels. This allows us to display cool light features like changing the color in a wave or slow transitions between lights.
 
 ## Developer Details
   To access this project's web codebase, visit its **[GitHub repository](https://github.com/annawang7/cs50-final-proj)**.
