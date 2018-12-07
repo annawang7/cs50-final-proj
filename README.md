@@ -23,14 +23,27 @@ Our moods are often mercurial and shaped by our surroundings, especially by colo
 
 Using the six mood divisions in the color wheel above with some modifications, we mapped each of the colors to an RGB range that users can input.
 
-* Red, 
+| Color            | Mood      | 
+| ---------------- |:---------:|
+| Red              | Mad       |
+| Orange-yellow    | Joyful    |
+| Green            | Calm      |
+| Cyan             | Powerful  |
+| Purple-pink      | Stressed  |
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-  Mapping colors to moods [GET CALEB IN HERE MAN]
+Red is the color of **anger**: it is a fiery color that often can overtake us if we are not conscious of it.
+
+Orange and yellow are the colors of **joy**: they are bright, sunny colors reminiscent of happy days.
+
+Green is the calm of **peace**: it is a color wrapped in soothing shades of trees, ranging from the deep green of the forest to the foam-green of the sea.
+
+Cyan is the color of **power**: it is a statement color, proud, excited and self-confident in its piercing shades.
+
+Blue is the color of **sadness**: it is a color that draws out melancholy and brooding behavior.
+
+Purple and pink are the colors of **stress**: it is a color that borders on alarm.
+
+While some of these color choices may seem arbitrary, these are simply suggestions and an imperfect mapping of an infinite range of human emotions to a finite range of colors. We hope that this can help tap into the continuous spectrum of moods and emotions that Harvard students experience on a day-to-day basis in a colorful, expressive manner.
 
 ## Developer Details
   Please access [That's a Mood](https://github.com/annawang7/cs50-final-proj)** to get started.
