@@ -16,6 +16,9 @@
   
   Once they hit submit, the color selected on the wheel is sent through a series of pipelines to eventually interact with the LEDs, and add the new input to our hardware project.
 
+## Background
+  Mapping colors to moods [GET CALEB IN HERE MAN]
+
 ## Developer Details
   To access this project's web codebase, visit its **[Github Repository](https://github.com/annawang7/cs50-final-proj)**.
 

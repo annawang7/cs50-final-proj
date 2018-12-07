@@ -59,7 +59,8 @@ layout: compress
         var green = color.rgb.g;
         var blue = color.rgb.b;
         var text = "Input A Mood";
-
+        
+        /* Algorithm to extrapolate mood from color */
         if (red == 255) {
             if (Math.abs(blue-green) < 125 - Math.min(blue,green)/2) {
                 text = "Mad";
