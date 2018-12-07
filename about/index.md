@@ -9,20 +9,16 @@ comments: false
 <center><b>That's A Mood</b> is a high-tech, interactive art exhibition made for Harvard's CS50.</center>
 
 ## About Us
-To emphasize the importance of an open expression of mental health to display how we feel in the Harvard community, the That's A Mood project visually displays the thoughts and feeligns of Harvard students 
+To emphasize the importance of an open expression of mental health to display how we feel in the Harvard community, the That's A Mood project visually displays the thoughts and feelings of Harvard students.
 
 ## Preview
 {% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
+    https://annawang7.github.io/cs50-final-proj/assets/img/Final.png
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
 
 See a [live version of Mood](http://annawang7.github.io/cs50-final-project) hosted on GitHub.
 See the [source code for Mood](http://www.github.com/annawang7/cs50-final-project) hosted on GitHub.
 
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+## Theme Credits
+This theme is [Moon](http://taylantatli.me/Moon/moon-theme/) by Taylantatli.
