@@ -17,6 +17,7 @@
   Once they hit submit, the color selected on the wheel is sent through a series of pipelines to eventually interact with the LEDs, and add the new input to our hardware project.
 
 ## Background
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 Mood heavily impacts the way
   Mapping colors to moods [GET CALEB IN HERE MAN]
 
