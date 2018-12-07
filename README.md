@@ -17,13 +17,23 @@
   Once they hit submit, the color selected on the wheel is sent through a series of pipelines to eventually interact with the LEDs, and add the new input to our hardware project.
 
 ## Background
-![[Color Wheel](https://www.psychologytoday.com/us/blog/peaceful-parents-happy-kids/201801/easy-ways-teach-kids-about-emotions-in-daily-life?amp)](https://github.com/annawang7/cs50-final-proj/blob/gh-pages/Color_Wheel.jpg "Color wheel")
+![Color Wheel](https://github.com/annawang7/cs50-final-proj/blob/gh-pages/Color_Wheel.jpg "Source: https://www.psychologytoday.com/us/blog/peaceful-parents-happy-kids/201801/easy-ways-teach-kids-about-emotions-in-daily-life?amp")
 
-Mood heavily impacts the way
+Our moods are often mercurial and shaped by our surroundings, especially by color. Colors like green and blue are viewed as more calming colors, while colors like red and yellow may excite or even agitate us. Similarly, colors can often be a reflection of how we currently feel. Thus began That's A Mood: a colorful exploration to reveal how we--as a campus--are feeling.
+
+Using the six mood divisions in the color wheel above with some modifications, we mapped each of the colors to an RGB range that users can input.
+
+* Red, 
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
   Mapping colors to moods [GET CALEB IN HERE MAN]
 
 ## Developer Details
-  To access this project's web codebase, visit its **[Github Repository](https://github.com/annawang7/cs50-final-proj)**.
+  Please access [That's a Mood](https://github.com/annawang7/cs50-final-proj)** to get started.
 
 ## Study Citations
   * **[Mental Health America](https://www.mha-em.org/advocacy/12-media/132-mental-health-treatment-and-stigma-statistics.html)** 
