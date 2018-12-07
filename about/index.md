@@ -13,12 +13,12 @@ To emphasize the importance of an open expression of mental health to display ho
 
 ## Preview
 {% capture images %}
-    https://annawang7.github.io/cs50-final-proj/assets/img/Final.png
+    http://annawang7.github.io/cs50-final-proj/assets/img/Final.PNG
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
 
-See a [live version of Mood](http://annawang7.github.io/cs50-final-project) hosted on GitHub.
-See the [source code for Mood](http://www.github.com/annawang7/cs50-final-project) hosted on GitHub.
+See a [live version of Mood](http://annawang7.github.io/cs50-final-proj) hosted on GitHub.
+See the [source code for Mood](http://www.github.com/annawang7/cs50-final-proj) hosted on GitHub.
 
 ## Theme Credits
 This theme is [Moon](http://taylantatli.me/Moon/moon-theme/) by Taylantatli.
